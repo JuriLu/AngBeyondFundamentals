@@ -1,20 +1,8 @@
-<h1>{{title | uppercase}}</h1>
+<!--Navbar-->
+<app-navbar></app-navbar>
 
-<h3>Today: {{today | date:'fullDate'}} </h3>
+<!--Application Content-->
+<app-home></app-home>
 
-<img [src]="imageUrl" [width]="imageWidth" height="150" alt="Movie App">
-
-<p [class.sample]="true">
-  Paragraph test styling and binding
-</p>
-
-<p [class]="multipleClasses">
-  Paragraph with MULTIPLE classes
-</p>
-
-<p [style]="'backgroundColor: red'">
-  Paragraph with STYLE
-</p>
-
-
-
+<!--Footer-->
+<app-footer></app-footer>
