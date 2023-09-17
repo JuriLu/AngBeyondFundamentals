@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'movies-app';
+  title: string = 'Movies App';
+
+  today: Date = new Date()
+
+  imageUrl: string = 'https://dotnethow.net/images/movies/movie-1.jpeg'
+  imageWidth: number = 100
+
+  multipleClasses = 'sample-color sample'
+
+  price: number = 10
+  sellingPrice: number = 15.30
 }

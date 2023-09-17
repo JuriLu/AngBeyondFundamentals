@@ -1,5 +1,20 @@
-<h1>App Component</h1>
+<h1>{{title | uppercase}}</h1>
 
-<hr>
-<app-details></app-details>
+<h3>Today: {{today | date:'fullDate'}} </h3>
+
+<img [src]="imageUrl" [width]="imageWidth" height="150" alt="Movie App">
+
+<p [class.sample]="true">
+  Paragraph test styling and binding
+</p>
+
+<p [class]="multipleClasses">
+  Paragraph with MULTIPLE classes
+</p>
+
+<p [style]="'backgroundColor: red'">
+  Paragraph with STYLE
+</p>
+
+
 
