@@ -13,6 +13,7 @@ import {NotAuthorizedComponent} from "./shared/not-authorized/not-authorized.com
 import {LoaderComponent} from "./shared/loader/loader.component";
 import {ModalComponent} from "./shared/modal/modal.component";
 import { ProfitPipe } from './pipes/profit.pipe';
+import { DetailsActorsComponent } from './components/details-actors/details-actors.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { ProfitPipe } from './pipes/profit.pipe';
     NotAuthorizedComponent,
     LoaderComponent,
     ModalComponent,
-    ProfitPipe
+    ProfitPipe,
+    DetailsActorsComponent
   ],
   imports: [
     BrowserModule
