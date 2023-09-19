@@ -19,6 +19,16 @@ const routes: Routes = [
   // {path:'feedback',component:FeedbackComponent}
   {path: 'search/:movieTitle', component: SearchComponent},
   {path: '**', component: NotFoundComponent}
+
+
+
+
+  // **? NESTED ROUTING
+  // {path: 'details/:id', component: DetailsComponent,children:[
+  //     {path: 'actors', component: DetailsActorsComponent},
+  //     {path: 'movies', component: DetailsMoviesComponent},
+  //     {path: 'reviews', component: DetailsReviewsComponent},
+  //   ]},
 ]
 
 @NgModule({
