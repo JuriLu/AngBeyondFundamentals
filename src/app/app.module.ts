@@ -19,6 +19,7 @@ import {RouterModule} from "@angular/router";
 import {AppRoutesModule} from "./modules/app.routes";
 import {FormsModule} from "@angular/forms";
 import { NotFoundComponent } from './shared/not-found/not-found.component';
+import { HeaderDirective } from './shared/directives/header.directive';
 
 
 @NgModule({
@@ -33,10 +34,15 @@ import { NotFoundComponent } from './shared/not-found/not-found.component';
     NotAuthorizedComponent,
     LoaderComponent,
     ModalComponent,
-    ProfitPipe,
     DetailsActorsComponent,
     SearchComponent,
-    NotFoundComponent
+    NotFoundComponent,
+
+    //** Pipes
+    ProfitPipe,
+
+    //** Directives
+    HeaderDirective
   ],
   imports: [
     BrowserModule,

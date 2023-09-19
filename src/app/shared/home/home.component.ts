@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
+
+  successColor: string = 'text text-success'
+  errorColor: string = 'text text-danger'
+  isSuccess: boolean = false
 
 }
