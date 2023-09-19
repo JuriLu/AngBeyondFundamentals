@@ -14,6 +14,7 @@ import {LoaderComponent} from "./shared/loader/loader.component";
 import {ModalComponent} from "./shared/modal/modal.component";
 import { ProfitPipe } from './pipes/profit.pipe';
 import { DetailsActorsComponent } from './components/details-actors/details-actors.component';
+import { SearchComponent } from './shared/search/search.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { DetailsActorsComponent } from './components/details-actors/details-acto
     LoaderComponent,
     ModalComponent,
     ProfitPipe,
-    DetailsActorsComponent
+    DetailsActorsComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule
