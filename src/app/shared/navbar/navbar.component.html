@@ -33,11 +33,13 @@
           type="search"
           placeholder="Search"
           aria-label="Search"
+          [(ngModel)]="searchMovieTitle"
+          name="searchMovieTitle"
         >
         <button
           class="btn btn-outline-success"
           type="button"
-          routerLink="/search"
+          [routerLink]="['/search/' + searchMovieTitle]"
         >Search</button>
         <button class="btn btn-outline-primary" type="submit">Login</button>
       </form>

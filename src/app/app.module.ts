@@ -17,6 +17,8 @@ import {DetailsActorsComponent} from './components/details-actors/details-actors
 import {SearchComponent} from './shared/search/search.component';
 import {RouterModule} from "@angular/router";
 import {AppRoutesModule} from "./modules/app.routes";
+import {FormsModule} from "@angular/forms";
+import { NotFoundComponent } from './shared/not-found/not-found.component';
 
 
 @NgModule({
@@ -33,11 +35,13 @@ import {AppRoutesModule} from "./modules/app.routes";
     ModalComponent,
     ProfitPipe,
     DetailsActorsComponent,
-    SearchComponent
+    SearchComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutesModule
+    AppRoutesModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

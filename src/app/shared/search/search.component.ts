@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {ActivatedRoute, Params} from "@angular/router";
 
 @Component({
   selector: 'app-search',
@@ -7,6 +8,14 @@ import { Component } from '@angular/core';
 })
 export class SearchComponent {
 
-  movieTitle:string = 'Example Title'
+  movieTitle:string = ''
+
+  constructor(
+    private activatedRoute:ActivatedRoute
+  ) {
+    this.activatedRoute.params.subscribe((param:Params):void =>{
+      this.movieTitle = param['movieTitle']
+    })
+  }
 
 }
